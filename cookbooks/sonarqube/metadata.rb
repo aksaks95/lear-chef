@@ -1,0 +1,10 @@
+name 'sonarqube'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures sonarqube'
+long_description 'Installs/Configures sonarqube'
+version '0.1.0'
+
+depends 'java'
+depends 'apt'
