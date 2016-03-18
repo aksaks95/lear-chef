@@ -1,11 +1,6 @@
 ---
 driver:
   name: vagrant
-  require_chef_omnibus: true
-  customize:
-    memory: 1024
-  network:
-    - ["forwarded_port", {guest: 9000, host: 9001}]
 
 provisioner:
   name: chef_zero
@@ -23,7 +18,4 @@ suites:
     run_list:
       - recipe[sonarqube::default]
     attributes:
-      sonarqube:
-        install_flavor: "distribution"
-        version : "4.5.6"
-        checksum : "3b372503944e1b21138d605d85cbf025"
+        # install_flavor: "package"

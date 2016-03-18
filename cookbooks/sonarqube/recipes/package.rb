@@ -12,12 +12,19 @@ package "Installing Sonar" do
 	action :install
 end
 
+
+
+
 cookbook_file "/etc/init.d/sonar" do
 	source "sonar"
 	action :create
 end
 
+
+
+
 service "sonar" do
 	supports restart: true, reload: false, status: true
 	action [:enable, :start]
 end
+

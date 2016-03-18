@@ -7,4 +7,3 @@
 include_recipe "java"
 
 include_recipe "sonarqube::#{node['sonarqube']['install_flavor']}"
-

@@ -6,5 +6,5 @@ description 'Installs/Configures sonarqube'
 long_description 'Installs/Configures sonarqube'
 version '0.1.0'
 
-depends 'java'
 depends 'apt'
+depends 'java'
